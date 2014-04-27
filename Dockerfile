@@ -2,7 +2,7 @@ FROM zachlatta/jvm
 MAINTAINER Zach Latta <zach@zachlatta.com>
 
 RUN useradd -s /bin/bash -d /minecraft -m minecraft
-ADD https://s3.amazonaws.com/Minecraft.Download/versions/1.7.2/minecraft_server.1.7.2.jar /minecraft/minecraft_server.jar
+ADD https://s3.amazonaws.com/Minecraft.Download/versions/1.7.9/minecraft_server.1.7.9.jar /minecraft/minecraft_server.jar
 RUN chown -R minecraft:minecraft /minecraft
 
 VOLUME /minecraft
